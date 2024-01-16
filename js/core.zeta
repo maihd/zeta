@@ -1,0 +1,30 @@
+;; Vector functions
+vector      -> Array:of                     .
+vector-from -> Array:from                   .
+map         -> lambda (a-vector, a-lambda) {
+    r-vector -> [] .
+    loop -> lambda () x .
+    r-vector .
+} .
+for-each    -> Array:prototype:forEach:call .
+reduce      -> Array:prototype:reduce:call  .
+filter      -> Array:prototype:filter:call  .
+length      -> Array:prototype:length:call  .
+every       -> Array:prototype:every:call   .
+some        -> Array:prototype:some:call    .
+find        -> Array:prototype:find:call    .
+join        -> Array:prototype:join:call    .
+concat      -> Array:prototype:concat:call  .
+fill        -> Array:prototype:fill:call    .
+push        -> Array:prototype:push:call    .
+pop         -> Array:prototype:pop:call     .
+shift       -> Array:prototype:shift:call   .
+unshift     -> Array:prototype:unshift:call .
+reverse     -> Array:prototype:reverse:call .
+sort        -> Array:prototype:sort:call    .
+slice       -> Array:prototype:slice:call   .
+splice      -> Array:prototype:splice:call  .
+remove      -> lambda (v, i) (splice v i 1) .
+
+;; Printing
+print       -> console:log.call             .
